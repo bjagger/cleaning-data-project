@@ -3,7 +3,7 @@ Coursera Getting and Cleaning Data Course Project
 
 ### Please use this to load and view the dataset into your R console:	
 ```{r, eval=FALSE}	
-address <- ""https://s3.amazonaws.com/coursera-uploads/user-d362c50645b5a613f6b7068e/973498/asst-3/f1c81510b89f11e494c47bcf999bcf59.txt"	
+address <- "https://s3.amazonaws.com/coursera-uploads/user-d362c50645b5a613f6b7068e/973498/asst-3/f1c81510b89f11e494c47bcf999bcf59.txt"	
 address <- sub("^https", "http", address)	
 data <- read.table(url(address), header = TRUE)	
 View(data)	
