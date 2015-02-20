@@ -43,10 +43,10 @@ We do not need all the files in the download. These are the only ones needed:
       
 Please see run_analysis.R for file paths and description of these files.      
 
-## run_analysis (summary)
+### run_analysis (summary)
 "features.txt" is a vector containing over 500 variables. A subset of this was created to provide an index of only those names containing "mean" or "std" (84 were found).
 The two "X" datasets were bound together by rows, and the index was used to subset the resulting dataset of over 10,000 observations.
-The dataset activity factor integers were replaed with descriptive names (e.g., "walking", "standing" from the "Y" data), and suitable variable names adapted from the unsuitable features names.
+The dataset activity factor integers were replaced with descriptive names (e.g., "walking", "standing" from the "Y" data), and suitable variable names adapted from the unsuitable features names.
 The dataset was then grouped by subject and activity and this was summarized to find the averages for each of the 84 variables.
 Finally, the dataset was "melted" using the reshape2 package, in favour of this view:
 

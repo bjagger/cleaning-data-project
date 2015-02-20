@@ -1,12 +1,20 @@
 ## Variables in the tidy_df dataset
-* Column 1: subject
-+ combined subject_test and subject_train data; a vector of integers from 1 to 30.
-* Column 2: activity
-+ combined y_test and y_train data; each is a vector of factor levels from 1 to 6.
-+ factor integers from 1 to 6:
-      + walking, walking_upstairs, walking_downstairs, sitting, standing, laying
-+ the following code was used to replace integer with activity descriptions:
-      ```{r, eval=FALSE}
+# "subject" (column 1)
+This is a vector of integers from 1 to 30, which combines "subject_test" and "subject_train" data.
+
+# "activity" (column 2)
+This is a vector of factor levels from 1 to 6, which combines "y_test" and "y_train" data. 
+ * activity labels for the levels are taken from the "activity_labels.txt" file.
+   1. "walking"
+   2. "walking_upstairs"
+   3. "walking_downstairs""
+   4. "sitting"
+   5. "standing"
+   6. "laying"
+
+The following code was used to replace integer with activity descriptions.
+
+```{r, eval=FALSE}
 levels(merged_df2$V1.1)[1:6] <- activity_names[1:6]
 ```
 Feature names were found to be unsuitable for use as variable names. The make.names function was applied.
@@ -39,8 +47,8 @@ var_names2 <- str_replace(var_names2, meanFreq, mean_Freq)
 
 original "features"                  | variables
 ------------------------------------ | ------------------------------------
-      tBodyAcc-mean()-X                    | time_domain_Body_Accel_mean_X
-tBodyAcc-mean()-Y                       | time_domain_Body_Accel_mean_Y
+tBodyAcc-mean()-X                    | time_domain_Body_Accel_mean_X
+tBodyAcc-mean()-Y	                 | time_domain_Body_Accel_mean_Y
 tBodyAcc-mean()-Z	                 | time_domain_Body_Accel_mean_Z
 tBodyAcc-std()-X	                 | time_domain_Body_Accel_std_X
 tBodyAcc-std()-Y	                 | time_domain_Body_Accel_std_Y
