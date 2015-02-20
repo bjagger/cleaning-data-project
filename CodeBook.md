@@ -1,8 +1,8 @@
-## Variables in the tidy_df dataset
-# "subject" (column 1)
+### Variables in the tidy_df dataset
+### "subject" (column 1)
 This is a vector of integers from 1 to 30, which combines "subject_test" and "subject_train" data.
 
-# "activity" (column 2)
+### "activity" (column 2)
 This is a vector of factor levels from 1 to 6, which combines "y_test" and "y_train" data. 
  * activity labels for the levels are taken from the "activity_labels.txt" file.
    1. "walking"
