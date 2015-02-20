@@ -12,12 +12,12 @@ This is a vector of factor levels from 1 to 6, which combines "y_test" and "y_tr
    5. "standing"
    6. "laying"
 
-The following code was used to replace the six integers with the six activity descriptions.
+Activity names were stored in a vector and this was used to rename the activity integers, using the following method.	
 
 ```{r, eval=FALSE}
-levels(merged_df2$V1.1)[1:6] <- activity_names[1:6]
+levels(data$activity)[1:6] <- activity_names[1:6]
 ```
-### All Other Columns 	
+### All Other Columns (3 - 86)	 	
 Feature names were found to be unsuitable for use as variable names. They were changed by adding underscores to increase spacing and make them easier to read.
 In one case a correction was applied to the original name (BodyBody became Body).	
 
@@ -43,7 +43,8 @@ var_names2[1:83] <- str_replace(var_names2[1:83], Z, _Z)
 var_names2 <- str_replace(var_names2, meanFreq, mean_Freq)
 ```
 
-### Table of features and corresponding variables	
+This table matches original feature names to the new variable names.	
+	
 original "features"                  | variables
 ------------------------------------ | ------------------------------------
 tBodyAcc-mean()-X                    | time_domain_Body_Accel_mean_X
