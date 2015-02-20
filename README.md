@@ -8,30 +8,15 @@ address <- sub("^https", "http", address)
 data <- read.table(url(address), header = TRUE)	
 View(data)	
 ```	
-### Project Objective	
-Output a tidy data set, which has the following characteristics	
-
- * Each variable forms a column	
- * Each observation forms a row	
- * Each type of observational unit forms a table	
- (taken from: http://www.jstatsoft.org/v59/i10/paper)
-
+The run_analysis script starts with the assumption that the Samsung data is available in the working directory in an unzipped UCI HAR Dataset folder.	
 ### Instructions	
-You should create one R script called run_analysis.R that does the following.	
+Create one R script called run_analysis.R that does the following.	
  * Merges the training and the test sets to create one data set.	
  * Extracts only the measurements on the mean and standard deviation for each measurement.	
  * Uses descriptive activity names to name the activities in the data set.	
  * Appropriately labels the data set with descriptive variable names. 
- * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.	
-
-### Project Background
-The data is downloaded from:	
-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-The data results from an experiment which measured 30 human subjects performing 6 activities. A vector of over 500 variables called "features" forms each observation. Some of the subjects took part in the training phase, others in the test phase. There are over 10,000 observations in the combined datasets.
-The features are described (see "features.info.txt") as produced by signals from accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ in a Samsung phone.
-
-The download consists of several nested files. More information on the data is found in the "README" file included in the download.
-
+ * From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.  
+The download consists of several nested files. More information on the data is found in the "README" file included in the download.  	
 We do not need all the files in the download. These are the only ones needed:
  * activity_labels.txt    
  * features.txt           
@@ -40,8 +25,8 @@ We do not need all the files in the download. These are the only ones needed:
  * y_test.txt        
  * subject_train.txt
  * X_train.txt      
- * y_train.txt 
-      
+ * y_train.txt  	
+   
 Please see run_analysis.R for file paths and description of these files.      
 
 ### run_analysis (summary)
