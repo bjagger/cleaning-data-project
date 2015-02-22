@@ -22,14 +22,14 @@ file.names <- list.files("./UCI HAR Dataset", full.names = TRUE, recursive = TRU
 
 # These are the only files we need:
 # print(file.names[c(1,2,14:16, 26:28)])
-# "./data/UCI HAR Dataset/activity_labels.txt"    
-# "./data/UCI HAR Dataset/features.txt"           
-# "./data/UCI HAR Dataset/test/subject_test.txt"  
-# "./data/UCI HAR Dataset/test/X_test.txt"        
-# "./data/UCI HAR Dataset/test/y_test.txt"        
-# "./data/UCI HAR Dataset/train/subject_train.txt"
-# "./data/UCI HAR Dataset/train/X_train.txt"      
-# "./data/UCI HAR Dataset/train/y_train.txt" 
+# "./UCI HAR Dataset/activity_labels.txt"    
+# "./UCI HAR Dataset/features.txt"           
+# "./UCI HAR Dataset/test/subject_test.txt"  
+# "./UCI HAR Dataset/test/X_test.txt"        
+# "./UCI HAR Dataset/test/y_test.txt"        
+# "./UCI HAR Dataset/train/subject_train.txt"
+# "./UCI HAR Dataset/train/X_train.txt"      
+# "./UCI HAR Dataset/train/y_train.txt" 
 
 # Here's what they contain:
 # file.names[1] contains descriptive activity names

@@ -1,4 +1,3 @@
-## Course Project
 Please use this code to download and view the output dataset:	
 ```{r, eval=FALSE}	
 address <- "https://s3.amazonaws.com/coursera-uploads/user-d362c50645b5a613f6b7068e/973498/asst-3/f1c81510b89f11e494c47bcf999bcf59.txt"	
@@ -29,11 +28,10 @@ We do not need all of the files in the Samsung data download, only these:
       
 (Please see run_analysis.R for file paths and description of these files, and description of each step in the script.)	      
 
-"features.txt" is a vector containing over 500 variables. A subset of this was created to provide an index of only those names containing "mean" or "std". The subset contains 84 variables.	
-The two "X" datasets were bound together by rows, and the index was used to subset the resulting dataset of over 10,000 observations.
-The variable "activity" originally contained factor integers. These were replaced with descriptive names (e.g., "walking", "standing") taken from the "y" data. For the 84 variables, suitable variable names adapted from the unsuitable features names.	
+"features.txt" is a vector containing over 500 variables. A subset of this was created to provide an index of only those names containing "mean" or "std". The subset contains 84 variables.  The two "X" datasets were bound together by rows, and the index was used to subset the resulting dataset of over 10,000 observations. 
+The variable "activity" originally contained factor integers. These were replaced with descriptive names (e.g., "walking", "standing") taken from the "y" data. For the 84 variables, suitable variable names were adapted from the unsuitable features names. This is described in the codebook. 	
 The dataset was then grouped by subject and activity and this was summarized to find the averages for each of the 84 variables.
-Finally, the dataset was "melted" using the reshape2 package, in favour of this view:
+Finally, the dataset was "melted" using the reshape2 package, in agreement with this view:
 
 "In reality, you need long-format data much more commonly than wide-format data."
 (http://seananderson.ca/2013/10/19/reshape.html)
