@@ -137,7 +137,7 @@ levels(merged_df2$V1.1)[1:6] <- activity_names[1:6]
 # Make the subset of original feature names suitable for
 # variable names. The following shows changes to original
 # feature names. The changes generally follow recommendations
-# in "Post 4" at:
+# in the first post by the CommunityTA David Hood at:
 # https://class.coursera.org/getdata-011/forum/search?q=variable+names#15-state-query=variable+names
 
 # remove all parentheses, dashes, and any other unsuitable characters
